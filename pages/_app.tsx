@@ -17,7 +17,7 @@ export default function Portfolio(): any {
       </Head>
       
       <header className="bg-primary text-white text-center p-5">
-      <h1>Meu Portfólio</h1>
+      <h1>Gabriel Gedolin</h1>
       <p>Desenvolvedor Full-Stack | Next.js | Bootstrap</p>
       <div>
         <a href="https://github.com" target="_blank" rel="noopener noreferrer">
