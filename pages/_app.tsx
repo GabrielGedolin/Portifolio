@@ -18,7 +18,7 @@ export default function Portfolio(): any {
       
       <header className="bg-primary text-white text-center p-5">
       <h1>Gabriel Gedolin</h1>
-      <p>Desenvolvedor Full-Stack | Next.js | Bootstrap</p>
+      <p>Desenvolvedor Full-Stack | JavaScript | TypeScript | Node.js | React | Next.js | HTML | CSS | SQL| APIs | Bootstrap | SASS | Python</p>
       <div>
         <a href="https://github.com" target="_blank" rel="noopener noreferrer">
             <i className="bi bi-github" style={{ fontSize: '2rem', color: '#000' }}></i>
