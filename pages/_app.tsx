@@ -12,7 +12,7 @@ export default function Portfolio(): any {
   return (
     <>
       <Head>
-        <title>Meu Portfólio</title>
+        <title>Gabriel Gedolin</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       
