@@ -11,6 +11,7 @@ import React from "react"
 export default function Portfolio(): any {
   return (
     <>
+
       <Head>
         <title>Gabriel Gedolin</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
