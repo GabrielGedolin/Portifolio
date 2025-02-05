@@ -38,9 +38,9 @@ export default function Portfolio(): any {
           <div className="col-md-4">
             <div className="card">
               <div className="card-body">
-                <h5 className="card-title">Projeto 1</h5>
-                <p className="card-text">Descrição do projeto.</p>
-                <a href="#" className="btn btn-primary">Ver mais</a>
+                <h5 className="card-title">Tarefas</h5>
+                <p className="card-text">Site para marcar e finalizar tarefas do dia a dia</p>
+                <a href="https://tarefas-psi.vercel.app/" className="btn btn-primary">Ver mais</a>
               </div>
             </div>
           </div>
