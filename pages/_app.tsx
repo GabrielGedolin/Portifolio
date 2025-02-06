@@ -19,7 +19,18 @@ export default function Portfolio(): any {
       
       <header className="bg-primary text-white text-center p-5">
       <h1>Gabriel Gedolin</h1>
-      <p>Desenvolvedor Full-Stack | JavaScript | TypeScript | Node.js | React | Next.js | HTML | CSS | SQL| APIs | Bootstrap | SASS | Python</p>
+      <p>Desenvolvedor Full-Stack</p>
+      <img alt="HTML" title="HTML" width="50px" style="padding-right: 10px;" src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/html5.svg" />
+      <img alt="CSS" title="CSS" width="50px" style="padding-right: 10px;" src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/css3.svg" />
+      <img alt="JavaScript" title="JavaScript" width="50px" style="padding-right: 10px;" src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/javascript.svg" />
+      <img alt="TypeScript" title="TypeScript" width="50px" style="padding-right: 10px;" src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/typescript.svg" />
+      <img alt="React" title="React" width="50px" style="padding-right: 10px;" src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg" />
+      <img alt="Next.js" title="Next.js" width="50px" style="padding-right: 10px;" src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/nextdotjs.svg" />
+      <img alt="Bootstrap" title="Bootstrap" width="50px" style="padding-right: 10px;" src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/bootstrap.svg" />
+      <img alt="SASS" title="SASS" width="50px" style="padding-right: 10px;" src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/sass.svg" />
+      <img alt="Git" title="Git" width="50px" style="padding-right: 10px;" src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg" />
+      <img alt="Python" title="Python" width="50px" style="padding-right: 10px;" src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg" />
+
       <div>
         <a href="https://github.com" target="_blank" rel="noopener noreferrer">
             <i className="bi bi-github" style={{ fontSize: '2rem', color: '#000' }}></i>
