@@ -57,7 +57,7 @@ export default function Portfolio(): any {
           <div className="col-md-4">
             <div className="card">
               <div className="card-body">
-                <h5 className="card-title">Projeto 3</h5>
+                <h5 className="card-title">ㅤ/h5>
                 <p className="card-text">Descrição do projeto.</p>
                 <a href="#" className="btn btn-primary">Ver mais</a>
               </div>
@@ -67,7 +67,7 @@ export default function Portfolio(): any {
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">Projeto 4</h5>
-                <p className="card-text">Descrição do projeto.</p>
+                <p className="card-text">ㅤ</p>
                 <a href="#" className="btn btn-primary">Ver mais</a>
               </div>
             </div>
@@ -76,7 +76,7 @@ export default function Portfolio(): any {
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">Projeto 5</h5>
-                <p className="card-text">Descrição do projeto.</p>
+                <p className="card-text">ㅤ</p>
                 <a href="#" className="btn btn-primary">Ver mais</a>
               </div>
             </div>
@@ -85,7 +85,7 @@ export default function Portfolio(): any {
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">Projeto 6</h5>
-                <p className="card-text">Descrição do projeto.</p>
+                <p className="card-text">ㅤ</p>
                 <a href="#" className="btn btn-primary">Ver mais</a>
               </div>
             </div>
@@ -94,7 +94,7 @@ export default function Portfolio(): any {
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">Projeto 7</h5>
-                <p className="card-text">Descrição do projeto.</p>
+                <p className="card-text">ㅤ</p>
                 <a href="#" className="btn btn-primary">Ver mais</a>
               </div>
             </div>
@@ -103,7 +103,7 @@ export default function Portfolio(): any {
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">Projeto 8</h5>
-                <p className="card-text">Descrição do projeto.</p>
+                <p className="card-text">ㅤ</p>
                 <a href="#" className="btn btn-primary">Ver mais</a>
               </div>
             </div>
@@ -112,7 +112,7 @@ export default function Portfolio(): any {
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">Projeto 9</h5>
-                <p className="card-text">Descrição do projeto.</p>
+                <p className="card-text">ㅤ</p>
                 <a href="#" className="btn btn-primary">Ver mais</a>
               </div>
             </div>
@@ -121,7 +121,7 @@ export default function Portfolio(): any {
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">Projeto 10</h5>
-                <p className="card-text">Descrição do projeto.</p>
+                <p className="card-text">ㅤ</p>
                 <a href="#" className="btn btn-primary">Ver mais</a>
               </div>
             </div>
@@ -130,7 +130,7 @@ export default function Portfolio(): any {
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">Projeto 11</h5>
-                <p className="card-text">Descrição do projeto.</p>
+                <p className="card-text">ㅤ</p>
                 <a href="#" className="btn btn-primary">Ver mais</a>
               </div>
             </div>
@@ -139,7 +139,7 @@ export default function Portfolio(): any {
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">Projeto 12</h5>
-                <p className="card-text">Descrição do projeto.</p>
+                <p className="card-text">ㅤ</p>
                 <a href="#" className="btn btn-primary">Ver mais</a>
               </div>
             </div>
