@@ -69,7 +69,7 @@ export default function Portfolio(): any {
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">EcoCity</h5>
-                <p className="card-text"></p>
+                <p className="card-text">ㅤ</p>
                 <a href="https://eco-city-eta.vercel.app/" className="btn btn-primary">Ver mais</a>
               </div>
             </div>
