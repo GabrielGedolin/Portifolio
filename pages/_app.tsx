@@ -50,17 +50,115 @@ export default function Portfolio(): any {
       <section className="container mt-5">
         <h2 className="text-center mb-4">Projetos</h2>
         <div className="row">
-          {['Tarefas', 'Calculadora', 'EcoCity', 'Projeto 4', 'Projeto 5', 'Projeto 6', 'Projeto 7', 'Projeto 8', 'Projeto 9', 'Projeto 10', 'Projeto 11', 'Projeto 12'].map((title, index) => (
-            <div key={index} className="col-md-4 mb-4">
-              <div className="card shadow-sm border-light">
-                <div className="card-body">
-                  <h5 className="card-title">{title}</h5>
-                  <p className="card-text">ㅤ</p>
-                  <a href="#" className="btn btn-warning text-dark">Ver mais</a>
-                </div>
+          {/* Projetos com links para cada um */}
+          <div className="col-md-4 mb-4">
+            <div className="card shadow-sm border-light">
+              <div className="card-body">
+                <h5 className="card-title">Tarefas</h5>
+                <p className="card-text">ㅤ</p>
+                <a href="https://tarefas-psi.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-warning text-dark">Ver mais</a>
               </div>
             </div>
-          ))}
+          </div>
+          <div className="col-md-4 mb-4">
+            <div className="card shadow-sm border-light">
+              <div className="card-body">
+                <h5 className="card-title">Calculadora</h5>
+                <p className="card-text">ㅤ</p>
+                <a href="https://calculadora-olive-sigma.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-warning text-dark">Ver mais</a>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 mb-4">
+            <div className="card shadow-sm border-light">
+              <div className="card-body">
+                <h5 className="card-title">EcoCity</h5>
+                <p className="card-text">ㅤ</p>
+                <a href="https://eco-city-eta.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-warning text-dark">Ver mais</a>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 mb-4">
+            <div className="card shadow-sm border-light">
+              <div className="card-body">
+                <h5 className="card-title">Boletin</h5>
+                <p className="card-text">ㅤ</p>
+                <a href="https://boletin.vercel.app/" className="btn btn-warning text-dark">Ver mais</a>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 mb-4">
+            <div className="card shadow-sm border-light">
+              <div className="card-body">
+                <h5 className="card-title">Projeto 5</h5>
+                <p className="card-text">ㅤ</p>
+                <a href="#" className="btn btn-warning text-dark">Ver mais</a>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 mb-4">
+            <div className="card shadow-sm border-light">
+              <div className="card-body">
+                <h5 className="card-title">Projeto 6</h5>
+                <p className="card-text">ㅤ</p>
+                <a href="#" className="btn btn-warning text-dark">Ver mais</a>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 mb-4">
+            <div className="card shadow-sm border-light">
+              <div className="card-body">
+                <h5 className="card-title">Projeto 7</h5>
+                <p className="card-text">ㅤ</p>
+                <a href="#" className="btn btn-warning text-dark">Ver mais</a>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 mb-4">
+            <div className="card shadow-sm border-light">
+              <div className="card-body">
+                <h5 className="card-title">Projeto 8</h5>
+                <p className="card-text">ㅤ</p>
+                <a href="#" className="btn btn-warning text-dark">Ver mais</a>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 mb-4">
+            <div className="card shadow-sm border-light">
+              <div className="card-body">
+                <h5 className="card-title">Projeto 9</h5>
+                <p className="card-text">ㅤ</p>
+                <a href="#" className="btn btn-warning text-dark">Ver mais</a>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 mb-4">
+            <div className="card shadow-sm border-light">
+              <div className="card-body">
+                <h5 className="card-title">Projeto 10</h5>
+                <p className="card-text">ㅤ</p>
+                <a href="#" className="btn btn-warning text-dark">Ver mais</a>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 mb-4">
+            <div className="card shadow-sm border-light">
+              <div className="card-body">
+                <h5 className="card-title">Projeto 11</h5>
+                <p className="card-text">ㅤ</p>
+                <a href="#" className="btn btn-warning text-dark">Ver mais</a>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 mb-4">
+            <div className="card shadow-sm border-light">
+              <div className="card-body">
+                <h5 className="card-title">Projeto 12</h5>
+                <p className="card-text">ㅤ</p>
+                <a href="#" className="btn btn-warning text-dark">Ver mais</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
