@@ -16,7 +16,7 @@ export default function Portfolio(): any {
       {/* Header */}
       <header className="bg-warning text-white text-center p-5">
         <h1 className="display-4 font-weight-bold">Gabriel Gedolin</h1>
-        <p className="lead">Desenvolvedor Full-Stack</p>
+        <p className="lead">Desenvolvedor Full-Stack Junior</p>
 
         {/* Skills Icons */}
         <div className="d-flex justify-content-center flex-wrap">
@@ -83,7 +83,7 @@ export default function Portfolio(): any {
               <div className="card-body">
                 <h5 className="card-title">Boletin</h5>
                 <p className="card-text">ㅤ</p>
-                <a href="https://boletin.vercel.app/" className="btn btn-warning text-dark">Ver mais</a>
+                <a href="https://notas-provas.vercel.app/" className="btn btn-warning text-dark">Ver mais</a>
               </div>
             </div>
           </div>
