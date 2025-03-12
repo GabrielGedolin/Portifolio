@@ -1,162 +1,64 @@
-import '../styles/_styles.scss';
-import '../styles/app.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
-
 import Head from 'next/head';
 import React from 'react';
-
+import Primary from "../components/primary"
 export default function Portfolio(): any {
   return (
     <>
       <Head>
         <title>Gabriel Gedolin</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        {/* Bootstrap CDN */}
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+        />
+        
+        {/* Bootstrap Icons CDN */}
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+          rel="stylesheet"
+        />
       </Head>
 
       {/* Header */}
-      <header className="bg-warning text-white text-center p-5">
-        <h1 className="display-4 font-weight-bold">Gabriel Gedolin</h1>
-        <p className="lead">Desenvolvedor Full-Stack Junior</p>
-
-        {/* Skills Icons */}
-        <div className="d-flex justify-content-center flex-wrap">
-          {['html5', 'css3', 'javascript', 'typescript', 'react', 'nextdotjs', 'bootstrap', 'sass', 'git', 'python'].map((icon, index) => (
+      <header className="h-100 position-absolute bg-dark text-center p-5 w-40 top-0 left-0 d-flex">
+        <div className="text-center bg-dark d-flex flex-column align-items-center">
+          <div className="bg-light text-center  rounded-circle" style={{ width: '270px', height: '270px' }}>
             <img
-              key={index}
-              alt={icon}
-              title={icon}
-              width="50px"
-              className="m-2"
-              src={`https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/${icon}.svg`}
+            
+              src="./img/foto.jpg"
+              alt="Gabriel Gedolin"
+              className="rounded-circle w-100 h-100"
+              style={{ width:"270px", objectFit: 'cover' }}
             />
-          ))}
-        </div>
+          </div>
 
-        {/* Social Icons */}
-        <div className="d-flex justify-content-center mt-3">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-dark mx-3">
-            <i className="bi bi-github" style={{ fontSize: '2rem' }}></i>
-          </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-dark mx-3">
-            <i className="bi bi-instagram" style={{ fontSize: '2rem' }}></i>
-          </a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-dark mx-3">
-            <i className="bi bi-facebook" style={{ fontSize: '2rem' }}></i>
-          </a>
+          <h1 className="display-4 font-weight-bold text-light mt-4">Gabriel Gedolin</h1>
+          <p className="lead text-light">Desenvolvedor Full-Stack Junior</p>
+
+          {/* Social Icons */}
+          <div className="mt-3">
+            <a href="https://github.com/GabrielGedolin" target="_blank" rel="noopener noreferrer" className="text-light mx-3">
+              <i className="bi bi-github" style={{ fontSize: '2rem' }}></i>
+            </a>
+            <a href="https://instagram.com/gabriel_gedolin" target="_blank" rel="noopener noreferrer" className="text-light mx-3">
+              <i className="bi bi-instagram" style={{ fontSize: '2rem' }}></i>
+            </a>
+            <a href="https://www.linkedin.com/in/gabriel-gedolin-1973a5247/" target="_blank" rel="noopener noreferrer" className="text-light mx-3">
+              <i className="bi bi-linkedin" style={{ fontSize: '2rem' }}></i>
+            </a>
+          </div>
+
+          {/* Navigation Buttons */}
+          <div className="mt-4 ">
+            <button className="btn btn-light  w-50" style={{ marginRight:"10px", marginTop:"40px", fontSize: "20px", fontFamily: "monospace" }}>Projetos</button>
+            <button className="btn btn-light  w-50" style={{ marginRight:"10px", marginTop:"40px", fontSize: "20px", fontFamily: "monospace" }}>Competências</button>
+            <button className="btn btn-light  w-50" style={{ marginRight:"10px", marginTop:"40px", fontSize: "20px", fontFamily: "monospace" }}>Certificados</button>
+          </div>
         </div>
       </header>
-
-      {/* Projects Section */}
-      <section className="container mt-5">
-        <h2 className="text-center mb-4">Projetos</h2>
-        <div className="row">
-          {/* Projetos com links para cada um */}
-          <div className="col-md-4 mb-4">
-            <div className="card shadow-sm border-light">
-              <div className="card-body">
-                <h5 className="card-title">Tarefas</h5>
-                <p className="card-text">ㅤ</p>
-                <a href="https://tarefas-psi.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-warning text-dark">Ver mais</a>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 mb-4">
-            <div className="card shadow-sm border-light">
-              <div className="card-body">
-                <h5 className="card-title">EcoCity</h5>
-                <p className="card-text">ㅤ</p>
-                <a href="https://eco-city-2.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-warning text-dark">Ver mais</a>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 mb-4">
-            <div className="card shadow-sm border-light">
-              <div className="card-body">
-                <h5 className="card-title">Boletin</h5>
-                <p className="card-text">ㅤ</p>
-                <a href="https://notas-provas.vercel.app/" className="btn btn-warning text-dark">Ver mais</a>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 mb-4">
-            <div className="card shadow-sm border-light">
-              <div className="card-body">
-                <h5 className="card-title">Projeto 5</h5>
-                <p className="card-text">ㅤ</p>
-                <a href="#" className="btn btn-warning text-dark">Ver mais</a>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 mb-4">
-            <div className="card shadow-sm border-light">
-              <div className="card-body">
-                <h5 className="card-title">Projeto 6</h5>
-                <p className="card-text">ㅤ</p>
-                <a href="#" className="btn btn-warning text-dark">Ver mais</a>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 mb-4">
-            <div className="card shadow-sm border-light">
-              <div className="card-body">
-                <h5 className="card-title">Projeto 7</h5>
-                <p className="card-text">ㅤ</p>
-                <a href="#" className="btn btn-warning text-dark">Ver mais</a>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 mb-4">
-            <div className="card shadow-sm border-light">
-              <div className="card-body">
-                <h5 className="card-title">Projeto 8</h5>
-                <p className="card-text">ㅤ</p>
-                <a href="#" className="btn btn-warning text-dark">Ver mais</a>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 mb-4">
-            <div className="card shadow-sm border-light">
-              <div className="card-body">
-                <h5 className="card-title">Projeto 9</h5>
-                <p className="card-text">ㅤ</p>
-                <a href="#" className="btn btn-warning text-dark">Ver mais</a>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 mb-4">
-            <div className="card shadow-sm border-light">
-              <div className="card-body">
-                <h5 className="card-title">Projeto 10</h5>
-                <p className="card-text">ㅤ</p>
-                <a href="#" className="btn btn-warning text-dark">Ver mais</a>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 mb-4">
-            <div className="card shadow-sm border-light">
-              <div className="card-body">
-                <h5 className="card-title">Projeto 11</h5>
-                <p className="card-text">ㅤ</p>
-                <a href="#" className="btn btn-warning text-dark">Ver mais</a>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 mb-4">
-            <div className="card shadow-sm border-light">
-              <div className="card-body">
-                <h5 className="card-title">Projeto 12</h5>
-                <p className="card-text">ㅤ</p>
-                <a href="#" className="btn btn-warning text-dark">Ver mais</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-dark text-white text-center p-3 mt-5">
-        <p>Entre em contato: <a href="https://bit.ly/4hDP6v9" className="text-white">gabrielgedoli@gmail.com</a></p>
-      </footer>
+        <Primary/>
     </>
   );
 }
