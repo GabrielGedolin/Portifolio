@@ -9,7 +9,7 @@ export default function Portfolio(){
       </Head>
 
       <div className="portfolio-container">
-        <div className="github-stats">
+        <div className="github-stats" style={{ backgroundColor: '#efeaa7', padding: '10px' }}>
           <img
             alt="GitHub Stats"
             className="github-image"
@@ -17,7 +17,7 @@ export default function Portfolio(){
           />
         </div>
 
-        <div className="github-stats">
+        <div className="github-stats" style={{ backgroundColor: '#efeaa7', padding: '10px' }}>
           <img
             alt="GitHub Top Languages"
             className="github-image"
@@ -37,8 +37,6 @@ export default function Portfolio(){
 
         .github-stats {
           text-align: center;
-          background-color: #efeaa7;
-          padding: 10px;
           margin-bottom: 20px;
         }
 
