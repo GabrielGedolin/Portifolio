@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
-import Primary from "../components/primary.tsx"
+import Primary from "../components/primary"
 export default function Portfolio(): any {
   return (
     <>
