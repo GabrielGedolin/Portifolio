@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
 
-export default function Portfolio(){
+export default function Portfolio() {
   return (
     <>
       <Head>
@@ -9,17 +9,17 @@ export default function Portfolio(){
       </Head>
 
       <div className="portfolio-container">
-        <div className="github-stats" style={{ backgroundColor: '#efeaa7', padding: '10px' }}>
+        <div className="github-stats">
           <img
-            alt="GitHub Stats"
+            alt="Estatísticas do GitHub de GahCyber"
             className="github-image"
             src="https://github-readme-stats.vercel.app/api?username=GahCyber&show_icons=true&theme=highcontrast&include_all_commits=true&locale=pt-br"
           />
         </div>
 
-        <div className="github-stats" style={{ backgroundColor: '#efeaa7', padding: '10px' }}>
+        <div className="github-stats">
           <img
-            alt="GitHub Top Languages"
+            alt="Linguagens mais usadas por GahCyber no GitHub"
             className="github-image"
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=GahCyber&theme=highcontrast&layout=compact&custom_title=Tecnologias&langs_count=9"
           />
@@ -31,17 +31,33 @@ export default function Portfolio(){
           display: flex;
           flex-direction: column;
           align-items: center;
-          height: 100vh;
+          min-height: 100vh;
           justify-content: center;
+          padding: 20px;
         }
 
         .github-stats {
+          background-color: #efeaa7;
+          padding: 10px;
           text-align: center;
           margin-bottom: 20px;
+          border-radius: 8px; /* Adiciona bordas arredondadas */
         }
 
         .github-image {
-          height: 200px;
+          max-width: 100%;
+          height: auto;
+        }
+
+        @media (min-width: 768px) {
+          .portfolio-container {
+            flex-direction: row;
+            gap: 20px;
+          }
+
+          .github-stats {
+            margin-bottom: 0;
+          }
         }
       `}</style>
     </>
