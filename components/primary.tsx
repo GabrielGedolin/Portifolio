@@ -5,7 +5,7 @@ export default function Portfolio(): any {
   return (
     <>
       <div style={{height:"100vh"}} className="w-100">
-        <div align="center" style="background-color: #efeaa7; padding: 10px;">
+        <div style={{textAlign:"center", backgroundColor:"#efeaa7",padding:"10px"}}>
           <img 
             align="center" 
             alt="GitHub Stats" 
@@ -14,7 +14,7 @@ export default function Portfolio(): any {
           />
         </div>
         <br/>
-        <div align="center" style="background-color: #efeaa7; padding: 10px;">
+        <div style={{textAlign:"center", backgroundColor:"#efeaa7",padding:"10px"}}>
           <img 
             align="center" 
             alt="GitHub Stats" 
