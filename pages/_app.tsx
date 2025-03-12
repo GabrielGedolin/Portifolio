@@ -63,15 +63,6 @@ export default function Portfolio(): any {
           <div className="col-md-4 mb-4">
             <div className="card shadow-sm border-light">
               <div className="card-body">
-                <h5 className="card-title">Calculadora</h5>
-                <p className="card-text">ㅤ</p>
-                <a href="https://calculadora-olive-sigma.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-warning text-dark">Ver mais</a>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 mb-4">
-            <div className="card shadow-sm border-light">
-              <div className="card-body">
                 <h5 className="card-title">EcoCity</h5>
                 <p className="card-text">ㅤ</p>
                 <a href="https://eco-city-2.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-warning text-dark">Ver mais</a>
