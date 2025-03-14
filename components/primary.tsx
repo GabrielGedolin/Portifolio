@@ -13,7 +13,7 @@ export default function Primary() {
           <img
             alt="Estatísticas do GitHub de GahCyber"
             className="github-image"
-            src="https://github-readme-stats.vercel.app/api?username=GahCyber&show_icons=true&theme=highcontrast&include_all_commits=true&locale=pt-br"
+            src="https://github-readme-stats.vercel.app/api?username=GabrielGedolin&show_icons=true&theme=highcontrast&include_all_commits=true&locale=pt-br"
           />
         </div>
 
@@ -21,7 +21,7 @@ export default function Primary() {
           <img
             alt="Linguagens mais usadas por GahCyber no GitHub"
             className="github-image"
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=GahCyber&theme=highcontrast&layout=compact&custom_title=Tecnologias&langs_count=9"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=GabrielGedolin&theme=highcontrast&layout=compact&custom_title=Tecnologias&langs_count=9"
           />
         </div>
       </div>
