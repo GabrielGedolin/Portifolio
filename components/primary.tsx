@@ -5,7 +5,7 @@ export default function Primary() {
   return (
     <>
       <Head>
-        <title>Portfolio - GahCyber</title>
+        <title>Portfolio - Gabriel Gedolin</title>
       </Head>
 
       <div className="portfolio-container">
