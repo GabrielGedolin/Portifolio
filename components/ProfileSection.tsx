@@ -6,13 +6,14 @@ const ProfileSection = () => {
       <div className="vstack gap-4 text-center">
         {/* Profile Image */}
         <div className="position-relative mx-auto" style={{ width: '7rem', height: '7rem' }}>
-          <div className="position-relative w-100 h-100 rounded-circle overflow-hidden border border-2 border-white">
+          <div className="position-relative w-100 h-100 rounded-circle overflow-hidden border border-1">
             <Image 
-              src="/portrait.jpg" 
+              src="/img/foto.jpg" 
               alt="Profile" 
               fill 
               className="object-cover" 
               priority 
+              style={{border:"none"}}
             />
           </div>
         </div>
