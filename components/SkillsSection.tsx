@@ -66,7 +66,7 @@ const SkillsSection = () => {
     <div className="py-5 bg-black px-4">
       <div className="mx-auto" style={{ maxWidth: '1200px' }}>
         <div className="mb-4 ps-3">
-          <h3 className="h4 fw-semibold text-white text-start mb-2">Core Skills</h3>
+          <h3 className="h4 fw-semibold text-white text-start mb-2">Skills</h3>
           <hr className="border-white m-0" style={{ width: '100px' }} />
         </div>
 
