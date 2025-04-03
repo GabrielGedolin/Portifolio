@@ -1,64 +1,67 @@
-import Head from 'next/head';
-import React from 'react';
-import Primary from "../components/primary"
-export default function Portfolio(): any {
+import type { AppProps } from 'next/app'
+import Head from 'next/head'
+import { Geist, Geist_Mono } from 'next/font/google'
+import { useEffect } from 'react'
+
+
+const geistSans = Geist({
+  variable: '--font-geist-sans',
+  subsets: ['latin'],
+})
+
+const geistMono = Geist_Mono({
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
+})
+
+export default function App({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    // Carrega o Bootstrap JS dinamicamente
+    const bootstrap = document.createElement('script')
+    bootstrap.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js'
+    bootstrap.integrity = 'sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz'
+    bootstrap.crossOrigin = 'anonymous'
+    document.body.appendChild(bootstrap)
+
+    return () => {
+      document.body.removeChild(bootstrap)
+    }
+  }, [])
+
   return (
     <>
       <Head>
-        <title>Gabriel Gedolin</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        
-        {/* Bootstrap CDN */}
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-          rel="stylesheet"
+        {/* Bootstrap CSS CDN */}
+        <link 
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
+          crossOrigin="anonymous"
         />
-        
         {/* Bootstrap Icons CDN */}
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-          rel="stylesheet"
+        <link 
+          rel="stylesheet" 
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
         />
       </Head>
-
-      {/* Header */}
-      <header className="h-100 position-absolute bg-dark text-center p-5 w-40 top-0 left-0 d-flex">
-        <div className="text-center bg-dark d-flex flex-column align-items-center">
-          <div className="bg-light text-center  rounded-circle" style={{ width: '270px', height: '270px' }}>
-            <img
-            
-              src="./img/foto.jpg"
-              alt="Gabriel Gedolin"
-              className="rounded-circle w-100 h-100"
-              style={{ width:"270px", objectFit: 'cover' }}
-            />
-          </div>
-
-          <h1 className="display-4 font-weight-bold text-light mt-4">Gabriel Gedolin</h1>
-          <p className="lead text-light">Desenvolvedor Full-Stack Junior</p>
-
-          {/* Social Icons */}
-          <div className="mt-3">
-            <a href="https://github.com/GabrielGedolin" target="_blank" rel="noopener noreferrer" className="text-light mx-3">
-              <i className="bi bi-github" style={{ fontSize: '2rem' }}></i>
-            </a>
-            <a href="https://instagram.com/gabriel_gedolin" target="_blank" rel="noopener noreferrer" className="text-light mx-3">
-              <i className="bi bi-instagram" style={{ fontSize: '2rem' }}></i>
-            </a>
-            <a href="https://www.linkedin.com/in/gabriel-gedolin-1973a5247/" target="_blank" rel="noopener noreferrer" className="text-light mx-3">
-              <i className="bi bi-linkedin" style={{ fontSize: '2rem' }}></i>
-            </a>
-          </div>
-
-          {/* Navigation Buttons */}
-          <div className="mt-4 ">
-            <button className="btn btn-light  w-50" style={{ marginRight:"10px", marginTop:"40px", fontSize: "20px", fontFamily: "monospace" }}>Projetos</button>
-            <button className="btn btn-light  w-50" style={{ marginRight:"10px", marginTop:"40px", fontSize: "20px", fontFamily: "monospace" }}>Competências</button>
-            <button className="btn btn-light  w-50" style={{ marginRight:"10px", marginTop:"40px", fontSize: "20px", fontFamily: "monospace" }}>Certificados</button>
-          </div>
-        </div>
-      </header>
-        <Primary/>
+      
+      <style jsx global>{`
+        :root {
+          --bs-body-bg: black;
+          --font-geist-sans: ${geistSans.style.fontFamily};
+          --font-geist-mono: ${geistMono.style.fontFamily};
+        }
+        body {
+          background-color: black;
+          color: white;
+        }
+        .bg-body {
+          background-color: black !important;
+          color: white !important;
+        }
+      `}</style>
+      
+      <Component {...pageProps} />
     </>
-  );
+  )
 }
