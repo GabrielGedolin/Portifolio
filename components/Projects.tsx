@@ -4,7 +4,7 @@ const Projects = () => {
       role: 'Eco City',
       period: '15/02/2025 - Presente',
       highlights: 'Eco City é uma plataforma em Next.js para adoção e preservação de zonas verdes, incentivando a sustentabilidade.',
-      link:"https://eco-city-azure.vercel.app/"
+      link:"https://system-eco.vercel.app/"
     },
   ];
 
